@@ -1,0 +1,7 @@
+	a = get_val();
+	count_val(a);
+	while (a > 0)
+	{
+		a = get_val();
+		count_val(a);
+	}
