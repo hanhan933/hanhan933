@@ -1,0 +1,18 @@
+class ThreadClass extends Thread{
+    public void run() {
+        System.out.println("thread" + Thread.currentThread().getName());
+    }
+}
+ 
+class RunnableClass implements Runnable{
+    public void run(){
+        System.out.println("runnable：" + Thread.currentThread().getName());
+    }
+}
+ 
+class CallableClass  implements Callable<String> {
+    public String call(){
+        System.out.println("callable：");
+        return "get";
+    }
+}
